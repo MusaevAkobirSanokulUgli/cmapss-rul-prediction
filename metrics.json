@@ -1,0 +1,50 @@
+{
+  "subset": "FD001",
+  "test_rmse": 67.1299,
+  "test_mae": 58.8508,
+  "nasa_score": 66176.37,
+  "best_single_fold_rmse": 62.7339,
+  "fold_val_rmses": [
+    12.8485,
+    17.0694,
+    17.3441,
+    16.6774,
+    16.1305
+  ],
+  "fold_test_rmses": [
+    62.7339,
+    65.3287,
+    72.364,
+    69.9353,
+    67.4856
+  ],
+  "mean_val_rmse": 16.014,
+  "training_time_s": 525.4,
+  "config": {
+    "subset": "FD001",
+    "seq_len": 30,
+    "rul_cap": 125,
+    "n_features": 14,
+    "n_folds": 5,
+    "epochs": 150,
+    "batch_size": 256,
+    "lr": 0.001,
+    "cnn_filters": 64,
+    "lstm_hidden": 128,
+    "n_lstm_layers": 2,
+    "n_heads": 4,
+    "dropout": 0.2,
+    "huber_delta": 10.0,
+    "dropped_sensors": [
+      "s_1",
+      "s_5",
+      "s_6",
+      "s_10",
+      "s_16",
+      "s_18",
+      "s_19"
+    ],
+    "scheduler": "CosineAnnealingWarmRestarts(T0=30, T_mult=2)",
+    "noise_std": 0.005
+  }
+}
