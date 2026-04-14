@@ -1,39 +1,39 @@
 {
   "subset": "FD001",
-  "test_rmse": 67.1299,
-  "test_mae": 58.8508,
-  "nasa_score": 66176.37,
-  "best_single_fold_rmse": 62.7339,
+  "test_rmse": 13.8311,
+  "test_mae": 9.9965,
+  "nasa_score": 381.47,
+  "best_single_fold_rmse": 14.8354,
   "fold_val_rmses": [
-    12.8485,
-    17.0694,
-    17.3441,
-    16.6774,
-    16.1305
+    14.7116,
+    18.2028,
+    16.268,
+    15.3921,
+    14.9041
   ],
   "fold_test_rmses": [
-    62.7339,
-    65.3287,
-    72.364,
-    69.9353,
-    67.4856
+    17.1284,
+    18.3902,
+    14.8354,
+    15.9802,
+    14.8712
   ],
-  "mean_val_rmse": 16.014,
-  "training_time_s": 525.4,
+  "mean_val_rmse": 15.8957,
+  "training_time_s": 489.6,
   "config": {
     "subset": "FD001",
     "seq_len": 30,
     "rul_cap": 125,
     "n_features": 14,
     "n_folds": 5,
-    "epochs": 150,
+    "epochs": 200,
     "batch_size": 256,
     "lr": 0.001,
     "cnn_filters": 64,
     "lstm_hidden": 128,
     "n_lstm_layers": 2,
     "n_heads": 4,
-    "dropout": 0.2,
+    "dropout": 0.3,
     "huber_delta": 10.0,
     "dropped_sensors": [
       "s_1",
@@ -45,6 +45,6 @@
       "s_19"
     ],
     "scheduler": "CosineAnnealingWarmRestarts(T0=30, T_mult=2)",
-    "noise_std": 0.005
+    "noise_std": 0.01
   }
 }
